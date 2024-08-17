@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflex</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        body {
+            overflow-y: hidden;
+        }
+        .container{
+            background-image: radial-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("Netflix\ wallpaper.jpeg");
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            align-items: center;}
+           
+        .container nav  {
+           
+            display: flex;
+            flex-direction: column;
+            
+            padding-top: 0;
+            
+        }
+        .nav {
+            width: 100%;
+            padding: 10px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+         
+        }
+        .nav img {
+            height: 55px;
+            border-radius: 10px;
+            padding-top: 0;
+        }
+        .btn {
+            padding: 8px 15px;
+            color: #fff;
+            border: 1px solid black;
+            background-color: red;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .nav select {
+            padding: 8px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+        }
+        .content {
+            color: #fff;
+            text-align: center;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .content h1 {
+            font-size: 4vw;
+            margin-bottom: 10px;
+            margin-top: 87px;
+        }
+        .content h2 {
+            font-size: 1.5vw;
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 1.5vw;
+            margin-bottom: 20px;
+        }
+        .mail {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 0 20px;
+            
+        }
+        .mail input {
+            outline: none;
+            border: none;
+            padding: 12px 10px;
+            width: 100%;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            background-color: rgba(22, 16, 16, 0.493);
+            color: #fff;
+        }
+        .mail a {
+            background-color: red;
+            color: #fff;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        @media (max-width: 768px) {
+            .content h1 {
+                font-size: 6vw;
+            }
+            .content h2 {
+                font-size: 4vw;
+            }
+            .content p {
+                font-size: 2.5vw;
+            }
+            .mail input {
+                width: 80%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .content h1 {
+                font-size: 8vw;
+            }
+            .content h2 {
+                font-size: 6vw;
+            }
+            .content p {
+                font-size: 4vw;
+            }
+            .mail input {
+                width: 90%;
+            }
+            .mail a {
+                padding: 12px 15px;
+            }
+            .nav {
+                flex-direction: column;
+                align-items: center;
+                padding: 10px 2%;
+            }
+            .nav select, .btn {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <img src="netflex.jpeg" alt="Netflex Logo">
+            <!-- <select name="language" id="language">
+                <option value="english">English</option>
+                <option value="urdu">Urdu</option>
+                <option value=""></option>
+            </select> -->
+            <a class="btn" href="sign-in.html">Sign In</a>
+        </div>
+        <div class="content">
+            <h1>Unlimited Movies, TV<br> Shows and More</h1>
+            <h2>Watch Anywhere. Cancel Anytime.</h2>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <div class="mail">
+                <input type="email" placeholder="Email Address">
+                <a href="#">Get Started ></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
